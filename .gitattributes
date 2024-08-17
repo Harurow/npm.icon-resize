@@ -1,0 +1,12 @@
+# すべてのテキストファイルをLFに統一
+* text=auto
+
+# Markdownファイルは常にLF
+*.md text eol=lf
+
+# Windowsバッチファイルは常にCRLF
+*.bat text eol=crlf
+
+# バイナリファイルはGitの改行変換を無効化
+*.jpg binary
+*.png binary

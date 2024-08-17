@@ -1,0 +1,44 @@
+{
+  "name": "icon-resize",
+  "description": "A CLI tool for resizing icon images with customizable dimensions and automatic file watching for changes. Ideal for managing and updating icon assets efficiently.",
+  "version": "1.0.1",
+  "keywords": [
+    "icon",
+    "resize",
+    "image",
+    "cli",
+    "npm"
+  ],
+  "author": "Harurow",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Harurow/npm.icon-resize"
+  },
+  "bugs": {
+    "url": "https://github.com/Harurow/npm.icon-resize/issues"
+  },
+  "homepage": "https://github.com/Harurow/npm.icon-resize/read.me",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run build &&  jest",
+    "watch:build": "tsc --watch",
+    "build": "tsc",
+    "clean": "rimraf dist temp"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/minimist": "^1.2.5",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "sharp": "^0.33.5"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}

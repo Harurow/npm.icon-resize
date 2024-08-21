@@ -1,4 +1,4 @@
-# icon-resize
+# @harurow/icon-resize
 
 This project is a CLI tool for resizing images. It is designed to be simple and efficient, allowing you to resize images to various sizes. It also supports automatic processing when files are updated by monitoring changes.
 
@@ -21,7 +21,7 @@ npm install -g icon-resize
 Alternatively, you can run the tool using npx without installing it globally:
 
 ```bash
-npx icon-resize <file-path> [options]
+npx @harurow/icon-resize <file-path> [options]
 ```
 
 ## Usage

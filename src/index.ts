@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from "fs";
 import path from "path";
 import sharp from "sharp";
@@ -31,7 +33,15 @@ const defaultSizes = [16, 32, 64, 128];
 
 // 引数を解析
 const parseArgs = () => {
-  const args = minimist(process.argv.slice(2));
+  const args = minimist(process.argv.slice(2), {
+    alias: {
+      o: "output-dir",
+      s: "size",
+      f: "force",
+      w: "watch",
+      h: "help",
+    }
+  });
 
   // ヘルプ表示
   if (args.help || args.h) {

@@ -1,5 +1,5 @@
 {
-  "name": "icon-resize",
+  "name": "@harurow/icon-resize",
   "description": "A CLI tool for resizing icon images with customizable dimensions and automatic file watching for changes. Ideal for managing and updating icon assets efficiently.",
   "version": "1.0.1",
   "keywords": [
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Harurow/npm.icon-resize/read.me",
   "main": "dist/index.js",
   "scripts": {
-    "test": "npm run build &&  jest",
+    "test": "npm run build && jest",
     "watch:build": "tsc --watch",
     "build": "tsc",
     "clean": "rimraf dist temp"
